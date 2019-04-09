@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.mvc.controller.PrincipalController">
+  <children>
+    <MenuBar minHeight="27.0" prefHeight="30.0" prefWidth="800.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Cadastros">
+          <items>
+            <MenuItem fx:id="menuItemCadastroCliente" mnemonicParsing="false" onAction="#menuItemCadastroClienteClick" text="Cliente" />
+                  <MenuItem fx:id="menuItemCadastroUsuario" mnemonicParsing="false" onAction="#menuItemCadastroUsuarioClick" text="Usuário" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Sistema">
+          <items>
+            <MenuItem fx:id="menuItemSistemaSair" mnemonicParsing="false" onAction="#menuItemSistemaSairClicked" text="Sair" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="anchorPane" prefHeight="570.0" prefWidth="800.0" />
+  </children>
+</VBox>
